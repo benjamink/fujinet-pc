@@ -3,6 +3,7 @@
 #include "ReadBlockResponse.h"
 #include "SmartPortCodes.h"
 
+#include <algorithm>
 
 ReadBlockRequest::ReadBlockRequest(const uint8_t request_sequence_number, const uint8_t sp_unit)
 	: Request(request_sequence_number, SP_READ_BLOCK, sp_unit), block_number_{} {}
